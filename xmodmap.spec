@@ -1,6 +1,6 @@
 Name: xmodmap
 Version: 1.0.3
-Release: %mkrel 1
+Release: %mkrel 2
 Summary: Utility for modifying keymaps and pointer button mappings in X
 Group: Development/X11
 Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
