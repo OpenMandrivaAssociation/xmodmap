@@ -1,5 +1,5 @@
 Name: xmodmap
-Version: 1.0.4
+Version: 1.0.5
 Release: %mkrel 1
 Summary: Utility for modifying keymaps and pointer button mappings in X
 Group: Development/X11
