@@ -1,11 +1,10 @@
 Name: xmodmap
-Version: 1.0.5
-Release: %mkrel 2
+Version: 1.0.6
+Release: 1
 Summary: Utility for modifying keymaps and pointer button mappings in X
 Group: Development/X11
-Source: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
+Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License: MIT
-BuildRoot: %{_tmppath}/%{name}-root
 
 BuildRequires: libx11-devel >= 1.0.0
 BuildRequires: x11-util-macros >= 1.0.1
@@ -27,13 +26,8 @@ It has been obsoloted by XKB.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %{_bindir}/xmodmap
 %{_mandir}/man1/xmodmap.1*
