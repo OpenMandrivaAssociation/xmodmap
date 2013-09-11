@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   xmodmap-1.0.7.tar.bz2: 9f9c6b7bd058c09a8e15b1c4f4eccb972e51ffef
+sources:
+  xmodmap-1.0.8.tar.bz2: 44ebb0a1047fc9391422108007c30c64cc0782bc
