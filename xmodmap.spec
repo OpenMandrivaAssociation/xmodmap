@@ -1,6 +1,6 @@
 Name: xmodmap
-Version: 1.0.9
-Release: 6
+Version: 1.0.10
+Release: 1
 Summary: Utility for modifying keymaps and pointer button mappings in X
 Group: Development/X11
 Source0: http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
@@ -17,17 +17,17 @@ into keysyms.
 It has been obsoloted by XKB.
 
 %prep
-%setup -q -n %{name}-%{version}
+%autosetup -n %{name}-%{version} -p1
 
 %build
 %configure \
 	--x-includes=%{_includedir}\
 	--x-libraries=%{_libdir}
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/xmodmap
